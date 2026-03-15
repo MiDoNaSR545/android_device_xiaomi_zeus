@@ -14,6 +14,18 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
 $(call inherit-product, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
 
+# Lunaris Flag
+WITH_GMS := true
+WITH_BCR := true
+HBM_SUPPORTED := true
+LUNARIS_BUILD_TYPE := OFFICIAL
+BYPASS_CHARGE_SUPPORTED := true
+TARGET_OPTIMIZED_DEXOPT := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
+HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
+
 PRODUCT_NAME := lineage_zeus
 PRODUCT_DEVICE := zeus
 PRODUCT_MANUFACTURER := Xiaomi
