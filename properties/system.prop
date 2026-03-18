@@ -1,2 +1,4 @@
 # Xiaomi
 ro.product.mod_device=zeus_global
+
+ro.lunaris.maintainer=MiDoNaSR
